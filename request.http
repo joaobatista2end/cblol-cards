@@ -1,0 +1,53 @@
+POST http://localhost:3000/teams
+Content-Type: application/json
+
+{
+    "name": "INTZ Black",
+    "brand": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/97/INTZlogo_square.png/revision/latest?cb=20210715152713",
+    "year": 2023
+}
+
+### Update Team
+PATCH http://localhost:3000/teams/2
+Content-Type: application/json
+
+{
+    "year": 2024
+}
+
+### Fetch Teams
+GET http://localhost:3000/teams
+
+### Show Team
+GET http://localhost:3000/teams/2
+
+### Delete Team
+DELETE http://localhost:3000/teams/3
+
+
+### Players
+POST http://localhost:3000/players
+Content-Type: application/json
+
+{
+    "name": "Jhonxbatista",
+    "birthday": "1996-01-29T00:00:00.000Z",
+    "nationality": "brazil"
+}
+
+### Update Team
+PATCH http://localhost:3000/teams/2
+Content-Type: application/json
+
+{
+    "year": 2024
+}
+
+### Fetch Teams
+GET http://localhost:3000/teams
+
+### Show Team
+GET http://localhost:3000/teams/2
+
+### Delete Team
+DELETE http://localhost:3000/teams/3
